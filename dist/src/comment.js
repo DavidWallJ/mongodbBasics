@@ -9,14 +9,14 @@ var Schema = mongoose.Schema;
 var CommentSchema = new Schema({
     content: String,
     // here we are referencing a totally different schema (not just a subschema)
-    // we use the [] array to show that we expect to have many different comments within
-    comments: [{
+    // we use the {} object to show that we expect to have a single entry
+    user: {
         type: Schema.Types.ObjectId,
-        ref: 'Comment'
-    }]
+        ref: 'user'
+    }
 });
 
-var BlogPost = mongoose.model('blogPost', BlogPostSchema);
+var Comment = mongoose.model('comment', CommentSchema);
 
-module.exports = BlogPost;
+module.exports = Comment;
 //# sourceMappingURL=comment.js.map
