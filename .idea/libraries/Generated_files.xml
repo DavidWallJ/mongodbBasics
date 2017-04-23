@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/src/comment.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/association_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/test_helper.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/virtual_type_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/delete_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/post.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/user.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/postSchema.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/reading_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/create_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/subdocument_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/update_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/validation_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/blogPost.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/src/comment.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/association_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/test_helper.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/virtual_type_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/delete_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/post.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/user.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/postSchema.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/reading_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/create_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/subdocument_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/update_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/validation_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/blogPost.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
