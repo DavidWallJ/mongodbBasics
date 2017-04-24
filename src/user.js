@@ -31,6 +31,16 @@ UserSchema.virtual('postCount').get(function(){
     return this.posts.length;
 });
 
+// some middleware
+// using this type of function() instead of () => so we can use 'this'
+// next is a mongoose function often used to redirect middleware to the 'next' thing after it's done running
+UserSchema.pre('remove', function(next) {
+    const BlogPost = mongoose.model('blogPost');
+    // instead of looping through the list of posts we can use an $in operator
+    BlogPost.remove({_id: {$in: this.blogPosts}})
+        .then(() => next());
+});
+
 // creates a collection called 'user'
 // User represents the entire collection of data
 const User = mongoose.model('user', UserSchema);

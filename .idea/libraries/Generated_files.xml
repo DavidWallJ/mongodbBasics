@@ -15,6 +15,7 @@
         <item url="file://$PROJECT_DIR$/dist/test/subdocument_test.js" />
         <item url="file://$PROJECT_DIR$/dist/test/update_test.js" />
         <item url="file://$PROJECT_DIR$/dist/test/validation_test.js" />
+        <item url="file://$PROJECT_DIR$/dist/test/middleware_test.js" />
         <item url="file://$PROJECT_DIR$/dist/src/blogPost.js" />
       </sourceFilesUrls>
     </properties>
@@ -32,6 +33,7 @@
       <root url="file://$PROJECT_DIR$/dist/test/subdocument_test.js" />
       <root url="file://$PROJECT_DIR$/dist/test/update_test.js" />
       <root url="file://$PROJECT_DIR$/dist/test/validation_test.js" />
+      <root url="file://$PROJECT_DIR$/dist/test/middleware_test.js" />
       <root url="file://$PROJECT_DIR$/dist/src/blogPost.js" />
     </CLASSES>
     <SOURCES />

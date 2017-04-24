@@ -8,11 +8,18 @@ var assert = require('assert');
 var User = require('../src/user');
 
 describe('reading users out of the database', function () {
-
+    var joe = void 0,
+        maria = void 0,
+        alex = void 0,
+        zach = void 0;
     beforeEach(function (done) {
         // this joe variable is a global var just so we can call it outside of this function
+        alex = new User({ name: 'Alex' });
         joe = new User({ name: 'Joe' });
-        joe.save().then(function () {
+        maria = new User({ name: 'Maria' });
+        zach = new User({ name: 'Zach' });
+
+        Promise.all([alex.save(), joe.save(), maria.save(), zach.save()]).then(function () {
             return done();
         });
     });
@@ -29,6 +36,17 @@ describe('reading users out of the database', function () {
     it('find a user with a particular id', function (done) {
         User.findOne({ _id: joe._id }).then(function (user) {
             assert(user.name === 'Joe');
+            done();
+        });
+    });
+
+    it('can skip and limit the result set', function (done) {
+        // passing in a {} is like *.  It means no filter.
+        User.find({})
+        //this sort means sort by name in acceding order. -1 for descending
+        .sort({ name: 1 }).skip(1).limit(2).then(function (users) {
+            assert(users.length === 2);
+            assert(users[0].name === "Joe" && users[1].name === "Maria");
             done();
         });
     });
